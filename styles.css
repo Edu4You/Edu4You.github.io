@@ -168,3 +168,57 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
         box-shadow: 0 0 5px #1a2942;
     }
 }
+
+/* Media Queries para pantallas medianas y pequeñas */
+
+/* Para tablets o pantallas medianas (ancho menor a 768px) */
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 1.5em;
+        padding: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        padding: 10px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    main {
+        max-width: 100%;
+        padding: 15px;
+    }
+}
+
+/* Para móviles (ancho menor a 480px) */
+@media screen and (max-width: 480px) {
+    header {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    nav a {
+        font-size: 1em;
+        margin: 5px 0;
+    }
+
+    main {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        font-size: 0.9em;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+}
